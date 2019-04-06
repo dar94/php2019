@@ -18,59 +18,50 @@
     <a href="#about">About</a>
 </div> 
 
-<div class="container">
+<div class="content">
 
-    <h1>Una nueva red social</h1> 
-
-    <h3 style="margin-top: 2%;">Crear usuario</h3>
 
     <div class="form-div">
         
-        <form>
+        <form action="/action_page.php">
+            <div class="container">
+              <h1>Crear Usuario</h1>
+              
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Ingresar Email" name="email" required>
 
-                
-                <input name="email" type="text" name="email" placeholder="E-mail"><br>
-                <br>
+              <label for="name"><b>Nombre</b></label>
+              <input type="text" placeholder="Ingresar Nombre" name="name" required>
 
-                <br> 
-                <input name="firstname" type="text" name="firstname" placeholder="Nombre"><br>
-                <br>
+              <label for="psw"><b>Apellido</b></label>
+              <input type="text" placeholder="Ingresar Apellido" name="surname" required>
 
-                <br> 
-                <input name="lastname" type="text" name="lastname"  placeholder="Apellido"><br>
-                <br>
+              <label for="usrname"><b>Nombre de usuario</b></label>
+              <input type="text" placeholder="Ingresar nombre de usuario" name="username" required>
 
-                <br> 
-                <input name="username" type="text" name="username" placeholder="Nombre de usuario"><br>
-                <br>
-
-                <br> 
-                <input name="psw" type="password" name="psw" placeholder="Contraseña"><br>
-                <br>
-
-                <br> 
-                <input name="myfile" type="file" name="myFile"><br>
-                <br>
-
-                <h3>Género:</h3>
-                <select>
-                    <option>Hombre</option>
-                    <option>Mujer</option>
-                    <option>Otro</option>
-                </select>
-                
-                
-                
-                
-
-                <br>
-                <input type="submit" value="Registrarse" class="btn-registro">
-
-        </form> 
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Ingresar Contraseña" name="psw" required>
+          
+              <label for="psw-repeat"><b>Repetir Contraseña</b></label>
+              <input type="password" placeholder="Repetir Contraseña" name="psw-repeat" required>
+              <hr>
+          
+              <button type="submit" class="registerbtn">Registrarse</button>
+            </div>
+            
+            <div class="container signin">
+              <p>¿Ya tienes una cuenta? <a href="#">Logueate</a>.</p>
+            </div>
+          </form>
 
     </div>
 
 
+</div>
+<div class="footer">
+    <p>Footer</p>
 </div>
 </body>
     
